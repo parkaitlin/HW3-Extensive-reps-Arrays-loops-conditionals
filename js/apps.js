@@ -40,31 +40,50 @@
 //     };
 // };
 
-// Getting to Know You
-const kenny = ["Kenny", 1000, "Austin"];
-const jimHaff = ["Jim H", 16, "All cities"];
-const reuben = ["Reuben", 22, "Durham"];
-const jimClark = ["Jim C", 186, "LA"];
-const ryan = ["Ryan", 65, "Denver"];
+// // Getting to Know You
+// const kenny = ["Kenny", 1000, "Austin"];
+// const jimHaff = ["Jim H", 16, "All cities"];
+// const reuben = ["Reuben", 22, "Durham"];
+// const jimClark = ["Jim C", 186, "LA"];
+// const ryan = ["Ryan", 65, "Denver"];
 
-//1
-kenny[0] = "Gameboy";
-console.log(kenny);
-//2
-jimClark[1] = 187;
-console.log(jimClark);
-//3
-ryan[2] = "Gotham City";
-console.log(ryan);
-//4
-reuben.pop();
-console.log(reuben);
-reuben[2] = "Chicago";
-console.log(reuben);
-//5
-jimHaff.pop();
-jimHaff.push("Chicago", "New York", "Seoul");
-console.log(jimHaff);
-//6
-jimHaff.splice(2,1);
-console.log(jimHaff);
+// //1
+// kenny[0] = "Gameboy";
+// console.log(kenny);
+// //2
+// jimClark[1] = 187;
+// console.log(jimClark);
+// //3
+// ryan[2] = "Gotham City";
+// console.log(ryan);
+// //4
+// reuben.pop();
+// console.log(reuben);
+// reuben[2] = "Chicago";
+// console.log(reuben);
+// //5
+// jimHaff.pop();
+// jimHaff.push("Chicago", "New York", "Seoul");
+// console.log(jimHaff);
+// //6
+// jimHaff.splice(2,1);
+// console.log(jimHaff);
+
+// Yell at the ninja Turtles
+let turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+for(let i = 0; i < turtles.length; i++) {
+    console.log(turtles[i].toUpperCase());
+};
+// Bonus in process
+//     for(let i = 0; i < turtles.length; i++) {    
+//     for(let j = 0; j < turtle[i].length; j++) {
+//         let turtleArray = turtles[i].split('');
+//     if(j % 2 === 0) {
+//         turtleArray[j].toUpperCase;
+
+//         }
+//     }
+//     console.log(turtles[i].toUpperCase());
+// };
+
