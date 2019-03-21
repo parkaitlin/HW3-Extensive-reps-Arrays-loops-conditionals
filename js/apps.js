@@ -70,11 +70,11 @@
 // console.log(jimHaff);
 
 // Yell at the ninja Turtles
-let turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+// let turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
-for(let i = 0; i < turtles.length; i++) {
-    console.log(turtles[i].toUpperCase());
-};
+// for(let i = 0; i < turtles.length; i++) {
+//     console.log(turtles[i].toUpperCase());
+// };
 // Bonus in process
 //     for(let i = 0; i < turtles.length; i++) {    
 //     for(let j = 0; j < turtle[i].length; j++) {
@@ -118,21 +118,33 @@ const kristynsCloset = [
     ]
   ];
 
-// Alien Attire
-//remove Kristyn's left shoe from her array
-kristynsCloset.shift();
-// declare a variable 'kristynsShoe'
-kristynsCloset.unshift("kristynsShoe");
-console.log(kristynsCloset);
-// add 'kristynsShoe' to Thom's accessories array
-thomsCloset[2].push("kristynsShoe");
-console.log(thomsCloset);
+// // Alien Attire
+// //remove Kristyn's left shoe from her array
+// kristynsCloset.shift();
+// // declare a variable 'kristynsShoe'
+// kristynsCloset.unshift("kristynsShoe");
+// console.log(kristynsCloset);
+// // add 'kristynsShoe' to Thom's accessories array
+// thomsCloset[2].push("kristynsShoe");
+// console.log(thomsCloset);
  
-  // Dirty Laundry
-console.log("Kristyn will be wearing her favorite " + kristynsCloset[3] + " paired with her " + kristynsCloset[4] + " and accessorize it with a " + kristynsCloset[5] + ".");
-let temp = 75
-if(temp < 60){
-    console.log("Thom should wear a " + thomsCloset[0][1] + " with " + thomsCloset[1][1] + " and a " + thomsCloset[2][1] + " because it's " + temp + " degrees out!");
-} else {
-    console.log("Thom should wear a " + thomsCloset[0][2] + " with " + thomsCloset[1][0] + " and " + thomsCloset[2][2] + " because it's " + temp + " degrees out!");
+//   // Dirty Laundry
+// console.log("Kristyn will be wearing her favorite " + kristynsCloset[3] + " paired with her " + kristynsCloset[4] + " and accessorize it with a " + kristynsCloset[5] + ".");
+// let temp = 75
+// if(temp < 60){
+//     console.log("Thom should wear a " + thomsCloset[0][1] + " with " + thomsCloset[1][1] + " and a " + thomsCloset[2][1] + " because it's " + temp + " degrees out!");
+// } else {
+//     console.log("Thom should wear a " + thomsCloset[0][2] + " with " + thomsCloset[1][0] + " and " + thomsCloset[2][2] + " because it's " + temp + " degrees out!");
+// }
+
+// Dirty Laundry
+for(i = 0; i < kristynsCloset.length; i++){
+  console.log("WHIRR: Now washing " + kristynsCloset[i]);
+}
+
+// Inventory
+for(i = 0; i < 1; i++) {
+  console.log("Shirts" + ":" + thomsCloset[i].length + " items");
+  console.log("Pants" + ":" + thomsCloset[i].length + " items");
+  console.log("Accessries" + ":" + thomsCloset[i].length + " items");
 }
