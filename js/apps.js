@@ -87,3 +87,52 @@ for(let i = 0; i < turtles.length; i++) {
 //     console.log(turtles[i].toUpperCase());
 // };
 
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+// Alien Attire
+//remove Kristyn's left shoe from her array
+kristynsCloset.shift();
+// declare a variable 'kristynsShoe'
+kristynsCloset.unshift("kristynsShoe");
+console.log(kristynsCloset);
+// add 'kristynsShoe' to Thom's accessories array
+thomsCloset[2].push("kristynsShoe");
+console.log(thomsCloset);
+ 
+  // Dirty Laundry
+console.log("Kristyn will be wearing her favorite " + kristynsCloset[3] + " paired with her " + kristynsCloset[4] + " and accessorize it with a " + kristynsCloset[5] + ".");
+let temp = 75
+if(temp < 60){
+    console.log("Thom should wear a " + thomsCloset[0][1] + " with " + thomsCloset[1][1] + " and a " + thomsCloset[2][1] + " because it's " + temp + " degrees out!");
+} else {
+    console.log("Thom should wear a " + thomsCloset[0][2] + " with " + thomsCloset[1][0] + " and " + thomsCloset[2][2] + " because it's " + temp + " degrees out!");
+}
