@@ -16,13 +16,26 @@
 // otherwise, it should log "love me, pet me! HSSSSSS!"
 // randomIndex should be inside the loop so that it renews
 
-let sayings = ['...human...why you taking pictures of me?...', '...the catnip made me do it...', 'why does the red dot always get away...'];
+// let sayings = ['...human...why you taking pictures of me?...', '...the catnip made me do it...', 'why does the red dot always get away...'];
 
-for(let i = 0; i <= 20; i++){
-    let randomIndex = Math.floor(Math.random() * sayings.length)
-    if(i % 2 === 0){
-        console.log (sayings[randomIndex])
-    } else {
-        console.log("Love me, pet me! HSSSSSS!");
+// for(let i = 0; i <= 20; i++){
+//     let randomIndex = Math.floor(Math.random() * sayings.length)
+//     if(i % 2 === 0){
+//         console.log (sayings[randomIndex])
+//     } else {
+//         console.log("Love me, pet me! HSSSSSS!");
+//     };
+// };
+
+// Fizz Buzz
+for(i = 1; i <= 100; i++){
+    if(i % 3 === 0 && i % 5 === 0){
+    console.log("FizzBuzz");
+    } else if(i % 3 === 0){
+        console.log('Fizz');
+    } else if(i % 5 === 0){
+        console.log("Buzz");
+    } else{
+        console.log(i);
     };
 };
