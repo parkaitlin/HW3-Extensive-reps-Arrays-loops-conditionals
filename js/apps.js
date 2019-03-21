@@ -87,36 +87,36 @@
 //     console.log(turtles[i].toUpperCase());
 // };
 
-const kristynsCloset = [
-    "left shoe",
-    "cowboy boots",
-    "right sock",
-    "GA hoodie",
-    "green pants",
-    "yellow knit hat",
-    "marshmallow peeps"
-  ];
+// const kristynsCloset = [
+//     "left shoe",
+//     "cowboy boots",
+//     "right sock",
+//     "GA hoodie",
+//     "green pants",
+//     "yellow knit hat",
+//     "marshmallow peeps"
+//   ];
   
-  // Thom's closet is more complicated. Check out this nested data structure!!
-  const thomsCloset = [
-    [
-      // These are Thom's shirts
-      "grey button-up",
-      "dark grey button-up",
-      "light blue button-up",
-      "blue button-up",
-    ],[
-      // These are Thom's pants
-      "grey jeans",
-      "jeans",
-      "PJs"
-    ],[
-      // Thom's accessories
-      "wool mittens",
-      "wool scarf",
-      "raybans"
-    ]
-  ];
+//   // Thom's closet is more complicated. Check out this nested data structure!!
+//   const thomsCloset = [
+//     [
+//       // These are Thom's shirts
+//       "grey button-up",
+//       "dark grey button-up",
+//       "light blue button-up",
+//       "blue button-up",
+//     ],[
+//       // These are Thom's pants
+//       "grey jeans",
+//       "jeans",
+//       "PJs"
+//     ],[
+//       // Thom's accessories
+//       "wool mittens",
+//       "wool scarf",
+//       "raybans"
+//     ]
+//   ];
 
 // // Alien Attire
 // //remove Kristyn's left shoe from her array
@@ -137,14 +137,25 @@ const kristynsCloset = [
 //     console.log("Thom should wear a " + thomsCloset[0][2] + " with " + thomsCloset[1][0] + " and " + thomsCloset[2][2] + " because it's " + temp + " degrees out!");
 // }
 
-// Dirty Laundry
-for(i = 0; i < kristynsCloset.length; i++){
-  console.log("WHIRR: Now washing " + kristynsCloset[i]);
-}
+// // Dirty Laundry
+// for(i = 0; i < kristynsCloset.length; i++){
+//   console.log("WHIRR: Now washing " + kristynsCloset[i]);
+// }
 
-// Inventory
-for(i = 0; i < 1; i++) {
-  console.log("Shirts" + ":" + thomsCloset[i].length + " items");
-  console.log("Pants" + ":" + thomsCloset[i].length + " items");
-  console.log("Accessries" + ":" + thomsCloset[i].length + " items");
-}
+// // Inventory
+// for(i = 0; i < 1; i++) {
+//   console.log("Shirts" + ":" + thomsCloset[i].length + " items");
+//   console.log("Pants" + ":" + thomsCloset[i].length + " items");
+//   console.log("Accessries" + ":" + thomsCloset[i].length + " items");
+// }
+
+function numSum() {
+  let total = 0;
+  for(i = 0; i < 1000; i++){
+    if(i % 3 === 0 || i % 5 === 0){
+      total += i;
+    };
+  };
+return total;
+};
+console.log(numSum());
