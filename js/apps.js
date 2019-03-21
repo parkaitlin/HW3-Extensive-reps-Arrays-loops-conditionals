@@ -149,13 +149,33 @@
 //   console.log("Accessries" + ":" + thomsCloset[i].length + " items");
 // }
 
-function numSum() {
-  let total = 0;
-  for(i = 0; i < 1000; i++){
-    if(i % 3 === 0 || i % 5 === 0){
-      total += i;
-    };
-  };
-return total;
+// function numSum() {
+//   let total = 0;
+//   for(i = 0; i < 1000; i++){
+//     if(i % 3 === 0 || i % 5 === 0){
+//       total += i;
+//     };
+//   };
+// return total;
+// };
+// console.log(numSum());
+
+// Hungry for more?
+// declare a variable 'argument'
+//create a loop
+let argument = 7;
+for(i = 1; i <= 7; i++){
+  console.log("#".repeat(i));
+}
+
+for(i = 1; i <= 7; i++){
+  console.log(" ".repeat(7 - i) + "#".repeat(i));
+}
+
+for(i = 7; i >= 1; i--){
+  console.log("#".repeat(i));
 };
-console.log(numSum());
+
+for(i = 7; i >= 1; i--){
+  console.log(" ".repeat(7 - i) + "#".repeat(i));
+}
